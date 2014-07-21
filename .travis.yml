@@ -11,11 +11,6 @@ rvm: 1.9.3
 #    - legacy
 #    - experimental
 
-addons:
-  sauce_connect:
-    username: "KazuCocoa"
-    access_key: "37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
-
 # whitelist
 branches:
   only:
@@ -37,6 +32,11 @@ script:
 rvm: 2.1.0
 
 after_success:
+  addons:
+    sauce_connect:
+      username: "KazuCocoa"
+      access_key: "37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
+
 #  - upload apk files to somewhere (We should integrate other storage service or deploygate, for example.)
   - bundle install
   - test.rb SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
