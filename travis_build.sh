@@ -1,5 +1,10 @@
 #!/bin/sh
 
+echo "-------------------"
+echo "${xcode_workspace}"
+echo "-------------------"
+
+
 PROJECT=sampleCaptureForIos/sampleCaptureForIos.xcworkspace
 SCHEME=sampleCaptureForIosTests
 TEST_SDK=iphonesimulator
@@ -9,7 +14,7 @@ DESTINATION="platform=iOS Simulator,name=iPhone Retina (4-inch),OS=7.1"
 
 # test コマンド - clean, build, XCTest を実行する
 xcodebuild \
-  -project $(PROJECT) \
+  -workspace $(PROJECT)
   -scheme $(SCHEME) \
   -sdk $(TEST_SDK) \
   -configuration $(CONFIGURATION_DEBUG) \

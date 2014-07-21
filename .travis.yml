@@ -25,7 +25,7 @@ install:
 #before_script
 
 script:
-  - ./travis_build
+  - travis_build.sh
 
 #after_success or after_failure
 
