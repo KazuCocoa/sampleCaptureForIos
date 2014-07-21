@@ -3,6 +3,8 @@ xcode_workspace: sampleCaptureForIos.xcworkspace
 xcode_scheme: sampleCaptureForIosTests
 xcode_sdk: iphonesimulator7.1
 
+rvm: 1.9.3
+
 # blacklist
 #branches:
 #  except:
