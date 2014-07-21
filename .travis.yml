@@ -39,7 +39,7 @@ after_success:
 
 #  - upload apk files to somewhere (We should integrate other storage service or deploygate, for example.)
   - bundle install
-  - test.rb SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
+  - ruby test.rb SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
 
 #after_script
 
