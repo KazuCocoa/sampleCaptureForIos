@@ -1,0 +1,33 @@
+language: objective-c
+xcode_workspace: sampleCaptureForIos.xcworkspace
+xcode_scheme: sampleCaptureForIosTests
+xcode_sdk: iphonesimulator7.1
+
+# blacklist
+#branches:
+#  except:
+#    - legacy
+#    - experimental
+
+# whitelist
+branches:
+  only:
+    - master
+
+before_install:
+  - gem install cocoapods -v '0.32.1'
+
+install:
+  - pod install
+
+#before_script
+
+script:
+  - ./travis_build
+
+#after_success or after_failure
+
+#after_success:
+#  - upload apk files to somewhere (We should integrate other storage service or deploygate, for example.)
+
+#after_script
