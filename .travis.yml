@@ -21,7 +21,6 @@ branches:
 
 before_install:
   - gem install cocoapods -v '0.32.1'
-  - bundle install
 
 install:
   - pod install
@@ -33,8 +32,11 @@ script:
 
 #after_success or after_failure
 
+rvm: 2.1.0
+
 after_success:
 #  - upload apk files to somewhere (We should integrate other storage service or deploygate, for example.)
+  - bundle install
   - test.rb SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
 
 #after_script
