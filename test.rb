@@ -38,7 +38,7 @@ def desired_caps
         platformVersion: '7.1',
         deviceName:      'iPhone Simulator',
         app:             'build/Debug-iphonesimulator/sampleCaptureForIos.app',
-        name:            'Ruby Example for Appium'
+        name:            'test for Appium'
       }
   }
 end

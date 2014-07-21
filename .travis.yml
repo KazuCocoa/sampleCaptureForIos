@@ -14,7 +14,6 @@ rvm: 1.9.3
 addons:
   sauce_connect: true
 
-
 # whitelist
 branches:
   only:
@@ -22,6 +21,7 @@ branches:
 
 before_install:
   - gem install cocoapods -v '0.32.1'
+  - bundle install
 
 install:
   - pod install
