@@ -1,6 +1,6 @@
 language: objective-c
-xcode_workspace: sampleCaptureForIos.xcworkspace
-xcode_scheme: sampleCaptureForIosTests
+#xcode_workspace: sampleCaptureForIos.xcworkspace
+#xcode_scheme: sampleCaptureForIos
 xcode_sdk: iphonesimulator7.1
 
 rvm: 1.9.3
