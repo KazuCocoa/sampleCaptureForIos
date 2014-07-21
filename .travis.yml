@@ -12,7 +12,9 @@ rvm: 1.9.3
 #    - experimental
 
 addons:
-  sauce_connect: true
+  sauce_connect:
+    username: "KazuCocoa"
+    access_key: "37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
 
 # whitelist
 branches:
