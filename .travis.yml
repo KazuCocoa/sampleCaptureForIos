@@ -24,18 +24,20 @@ install:
 
 #before_script
 
+env: SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
+rvm: 2.1.0
+
 script:
   - ./travis_build.sh
+  - bundle install
+  - rspec test.rb
+
 
 #after_success or after_failure
 
 #after_success:
 
-rvm: 2.1.0
-env: SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
 
 after_script:
-  - bundle install
-  - rspec test.rb
 
 
