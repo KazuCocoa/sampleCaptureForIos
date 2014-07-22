@@ -29,18 +29,12 @@ script:
 
 #after_success or after_failure
 
+#after_success:
+
 rvm: 2.1.0
-
-after_success:
-#  addons:
-#    sauce_connect:
-#      username: "KazuCocoa"
-#      access_key: "37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
-
-#  - upload apk files to somewhere (We should integrate other storage service or deploygate, for example.)
+after_script:
+  env: SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
   - bundle install
-  - SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d" rspec test.rb
-
-#after_script
+  - rspec test.rb
 
 
