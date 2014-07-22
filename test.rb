@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'spec'
 require 'appium_lib'
 require 'sauce_whisk'
 require 'json'
