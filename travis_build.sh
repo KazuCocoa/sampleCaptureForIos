@@ -1,7 +1,6 @@
 #!/bin/sh
 
 echo "-------------------"
-echo "${xcode_workspace}"
 echo "-------------------"
 
 

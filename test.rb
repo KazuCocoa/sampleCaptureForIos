@@ -25,6 +25,7 @@ describe 'Computation' do
   end
 
   it 'just sample' do
+    puts 'in description'
     # nothing
   end
 
