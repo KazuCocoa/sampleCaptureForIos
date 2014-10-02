@@ -9,7 +9,7 @@ SCHEME=sampleCaptureForIos
 TEST_SDK=iphonesimulator
 
 CONFIGURATION_DEBUG=Debug
-DESTINATION="platform=iOS Simulator,name=iPhone Retina (4-inch),OS=7.1"
+DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=8.0"
 
 OUTPUT_PATH="`pwd`/build/"
 
