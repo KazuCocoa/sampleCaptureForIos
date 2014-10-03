@@ -5,8 +5,8 @@ require 'json'
 require 'rest_client'
 
 
-SAUCE_USERNAME   = ENV['SAUCE_USERNAME']
-SAUCE_ACCESS_KEY = ENV['SAUCE_ACCESS_KEY']
+SAUCE_USERNAME   = ENV['sauce_username']
+SAUCE_ACCESS_KEY = ENV['sauce_access_key']
 
 # This is the test itself
 describe 'Computation' do
