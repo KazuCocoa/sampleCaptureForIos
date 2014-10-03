@@ -24,7 +24,11 @@ install:
 
 #before_script
 
-env: SAUCE_USERNAME="KazuCocoa" SAUCE_ACCESS_KEY="37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
+env:
+  SAUCE_USERNAME: "KazuCocoa"
+  SAUCE_ACCESS_KEY: #"37a03dc7-8f8e-4fa7-901f-8006db1dd07d"
+        secure: "LICeBi0jJxva1YY2orphGNzpXnfGoiqWeQvMpLIVME6FV4u3lIVKIglKZKGK2jmSve6lgqXbfnIhaocrrZLM1+m6LmYsLvyM8GUl2jkSGQR2Hs/wfX8+65jtNnHAs5PCgNQw0wsrNNdqbtAA2F/BS3KL+nU+Obnqe8JHCcBIZIo="
+
 rvm: 2.1.0
 
 script:

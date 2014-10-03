@@ -23,3 +23,6 @@ xcodebuild \
   SYMROOT="$OUTPUT_PATH" \
   DSTROOT="$OUTPUT_PATH" \
   clean build test
+
+zip -r -9 "$SYMROOT/Debug-iphonesimulator/sampleCaptureForIos.app.zip" "sampleCaptureForIos.app"
+
